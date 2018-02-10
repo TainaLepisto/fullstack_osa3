@@ -1,0 +1,9 @@
+
+POST http://localhost:3001/api/people/
+content-type: application/json
+
+{
+    "name": "Eka restin kautta",
+    "number": "9999",
+    "id": 200
+}
