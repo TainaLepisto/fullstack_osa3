@@ -1,9 +1,15 @@
 const express = require('express')
-const app = express()
 const bodyParser = require('body-parser')
+const morgan = require('morgan')
+
+const app = express()
 
 app.use(bodyParser.json())
 
+
+//app.use(morgan('tiny'))
+morgan.token('reqdata', function (req, res) { return JSON.stringify(req.body) })
+app.use(morgan(':method :url :reqdata :status :res[content-length] - :response-time ms'))
 
 let people = [
       {
@@ -73,10 +79,16 @@ let people = [
       app.post('/api/people', (req, res) => {
         const person = req.body
 
-        if (person.name === undefined) {
+        if (person.name === undefined || person.name === '') {
           return response.status(400).json({error: 'name missing'})
         }
-      
+        if (person.number === undefined || person.number === '') {
+          return response.status(400).json({error: 'number missing'})
+        }
+        if (people.find(p => p.name === person.name )) {
+          return response.status(400).json({error: 'name already exists'})
+        }
+
         const personNew = {
           name: person.name,
           number: person.number,
