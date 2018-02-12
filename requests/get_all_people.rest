@@ -2,4 +2,4 @@
 //GET http://localhost:3001/api/people/
 
 
-GET https://glacial-ridge-58030.herokuapp.com/api/people
+GET https://fullstack-osa3.herokuapp.com/api/people
