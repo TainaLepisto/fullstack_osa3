@@ -1,3 +1,4 @@
 
-DELETE http://localhost:3001/api/people/13
-content-type: application/json
+//DELETE http://localhost:3001/api/people/13
+
+DELETE https://glacial-ridge-58030.herokuapp.com/api/people/3086078

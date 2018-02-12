@@ -1,2 +1,5 @@
 
-GET http://localhost:3001/api/people/
+//GET http://localhost:3001/api/people/
+
+
+GET https://glacial-ridge-58030.herokuapp.com/api/people

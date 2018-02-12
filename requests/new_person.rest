@@ -1,5 +1,6 @@
 
-POST http://localhost:3001/api/people/
+//POST http://localhost:3001/api/people/
+POST https://glacial-ridge-58030.herokuapp.com/api/people
 content-type: application/json
 
 {
