@@ -1,0 +1,10 @@
+
+
+PUT http://localhost:3001/api/people/5a817c12b621de048417fa7d
+//POST https://fullstack-osa3.herokuapp.com/api/people
+content-type: application/json
+
+{
+    "name": "villekalle",
+    "number": "888"
+}

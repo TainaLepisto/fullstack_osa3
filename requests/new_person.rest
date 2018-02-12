@@ -1,9 +1,9 @@
 
-//POST http://localhost:3001/api/people/
-POST https://fullstack-osa3.herokuapp.com/api/people
+POST http://localhost:3001/api/people/
+//POST https://fullstack-osa3.herokuapp.com/api/people
 content-type: application/json
 
 {
-    "name": "uusi",
+    "name": "uusi villekalle uusi",
     "number": "999"
 }

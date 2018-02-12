@@ -1,4 +1,4 @@
 
-//DELETE http://localhost:3001/api/people/13
+DELETE http://localhost:3001/api/people/5a817e53c501df0612f49a23
 
-DELETE https://fullstack-osa3.herokuapp.com/api/people/1
+//DELETE https://fullstack-osa3.herokuapp.com/api/people/1

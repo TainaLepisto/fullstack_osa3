@@ -1,0 +1,5 @@
+
+GET http://localhost:3001/api/people/5a817cb608a4d004d1ff0567
+
+
+//GET https://fullstack-osa3.herokuapp.com/api/people
